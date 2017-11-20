@@ -21,8 +21,54 @@
 <h1>Inscription</h1>
 <p>
   
+<form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyE_S66brIAIaIrKBRRukAm3UxGG7g7qnrTsNjXGSC0GjRh5K6p/exec"></form>
+
+ <fieldset class="pure-group">
+      <label for="name">Nom complet: </label>
+      <input id="name" name="name" placeholder="Marc Favreau?" />
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" rows="10"
+      placeholder="Ton message ici"></textarea>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="email"><em>Ton</em> courriel:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="marc.favreau@email.com"/>
+      <span id="email-invalid" style="display:none">
+        C'est pas un courriel valide ça...</span>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="color">Ta couleur préférée?: </label>
+      <input id="color" name="color" placeholder="C'est pour distraire le chef ça" />
+    </fieldset>
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Envoyer</button>
+
+  </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Merci</em> de nous avoir écrit!
+      On devrait te répondre bientôt!</h2>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+
 </p>
 </main>
 
+
   </body>
 </html>
+

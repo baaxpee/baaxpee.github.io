@@ -72,3 +72,9 @@ nav {
     background-image: url(../images/nav.png);
     color: white;
 }
+
+
+form {
+  width:50%;
+  margin:auto;
+}
